@@ -1,0 +1,76 @@
+{
+  "name": "gd32h7",
+  "title": "GigaDevice GD32H7",
+  "description": "Open-source PlatformIO development platform for GigaDevice GD32H7xx ARM Cortex-M7 MCUs and the GD32H759I-EVAL development board, bundling CMSIS, GD32H7xx Standard Peripheral Library (V1.4.0), USBHS library, and GD32H759I-EVAL Board Support Package (LCD/TLI, GT911 Touch, EXMC SDRAM, SDIO0 + FatFs, I2S Audio, OSPI Flash, EEPROM, DCI Camera).",
+  "homepage": "https://www.gigadevice.com/product/mcu/high-performance-mcus/gd32h759imk6",
+  "license": "Apache-2.0",
+  "keywords": [
+    "dev-platform",
+    "arm",
+    "cortex-m7",
+    "gigadevice",
+    "gd32",
+    "gd32h7",
+    "gd32h759",
+    "gd32h759i-eval"
+  ],
+  "engines": {
+    "platformio": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaide6137/platform-gd32h7.git"
+  },
+  "version": "1.0.0",
+  "frameworks": {
+    "gd32h7xx_spl": {
+      "script": "builder/frameworks/gd32h7xx_spl.py",
+      "description": "GigaDevice GD32H7xx Standard Peripheral Library (V1.4.0) with USBHS and GD32H759I-EVAL BSP",
+      "homepage": "https://www.gigadevice.com/product/mcu/high-performance-mcus/gd32h759imk6",
+      "title": "GD32H7xx Standard Peripheral Library"
+    },
+    "spl": {
+      "script": "builder/frameworks/gd32h7xx_spl.py",
+      "description": "GigaDevice GD32H7xx Standard Peripheral Library (alias for gd32h7xx_spl)",
+      "homepage": "https://www.gigadevice.com/product/mcu/high-performance-mcus/gd32h759imk6",
+      "title": "GD32H7xx SPL"
+    },
+    "cmsis": {
+      "script": "builder/frameworks/cmsis.py",
+      "description": "ARM CMSIS-Core Cortex-M7 and GD32H7xx Device Peripheral Access Layer",
+      "homepage": "https://www.arm.com/technologies/cmsis",
+      "title": "CMSIS"
+    }
+  },
+  "packages": {
+    "toolchain-gccarmnoneeabi": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": "~1.120301.0",
+      "optional": true,
+      "optionalVersions": [
+        "~1.100301.0",
+        "~1.90201.0"
+      ]
+    },
+    "tool-openocd": {
+      "type": "uploader",
+      "owner": "platformio",
+      "version": "~2.1100.0",
+      "optional": true
+    },
+    "tool-jlink": {
+      "type": "uploader",
+      "owner": "platformio",
+      "version": "^1.78811.0",
+      "optional": true
+    },
+    "tool-dfuutil": {
+      "type": "uploader",
+      "owner": "platformio",
+      "version": "~1.11.0",
+      "optional": true
+    }
+  }
+}
+

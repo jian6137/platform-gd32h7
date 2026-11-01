@@ -1,0 +1,66 @@
+{
+  "build": {
+    "core": "gd32",
+    "cpu": "cortex-m7",
+    "extra_flags": "-DGD32H7XX -DGD32H759I -DGD32H7XXI -DGD32H759I_EVAL",
+    "f_cpu": "600000000L",
+    "fpu": "fpv5-d16",
+    "float_abi": "hard",
+    "hwids": [
+      [
+        "0x28E9",
+        "0x058F"
+      ],
+      [
+        "0x28E9",
+        "0x018A"
+      ]
+    ],
+    "ldscript": "gd32h759i_flash.ld",
+    "mcu": "gd32h759imk6",
+    "series": "GD32H7xx",
+    "variant": "GD32H759I_EVAL"
+  },
+  "connectivity": [
+    "can",
+    "ethernet",
+    "usb",
+    "sdio",
+    "ospi",
+    "exmc"
+  ],
+  "debug": {
+    "default_tools": [
+      "cmsis-dap"
+    ],
+    "jlink_device": "GD32H759IM",
+    "onboard_tools": [
+      "cmsis-dap",
+      "gd-link"
+    ],
+    "openocd_target": "gd32h7x.cfg",
+    "svd_path": "GD32H7xx.svd"
+  },
+  "frameworks": [
+    "gd32h7xx_spl",
+    "spl",
+    "cmsis"
+  ],
+  "name": "GigaDevice GD32H759I-EVAL",
+  "upload": {
+    "maximum_ram_size": 524288,
+    "maximum_size": 3932160,
+    "protocol": "cmsis-dap",
+    "protocols": [
+      "cmsis-dap",
+      "gd-link",
+      "jlink",
+      "stlink",
+      "dfu",
+      "blackmagic"
+    ],
+    "require_upload_port": false
+  },
+  "url": "https://www.gigadevice.com/product/mcu/high-performance-mcus/gd32h759imk6",
+  "vendor": "GigaDevice"
+}

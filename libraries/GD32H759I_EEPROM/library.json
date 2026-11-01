@@ -1,0 +1,25 @@
+{
+  "name": "GD32H759I_EEPROM",
+  "version": "2.1.0",
+  "description": "AT24C02 I2C EEPROM Driver for GD32H759I-EVAL.",
+  "keywords": [
+    "gd32h7",
+    "gd32h759i-eval",
+    "eeprom",
+    "at24cxx",
+    "i2c"
+  ],
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "GD32H759I_EVAL": "*"
+  },
+  "frameworks": [
+    "gd32h7xx_spl",
+    "spl",
+    "cmsis"
+  ],
+  "platforms": [
+    "gd32h7"
+  ]
+}
+

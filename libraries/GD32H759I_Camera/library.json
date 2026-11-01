@@ -1,0 +1,25 @@
+{
+  "name": "GD32H759I_Camera",
+  "version": "2.1.0",
+  "description": "OV2640 DCI Camera & SCCB Driver for GD32H759I-EVAL.",
+  "keywords": [
+    "gd32h7",
+    "gd32h759i-eval",
+    "dci",
+    "ov2640",
+    "camera"
+  ],
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "GD32H759I_EVAL": "*"
+  },
+  "frameworks": [
+    "gd32h7xx_spl",
+    "spl",
+    "cmsis"
+  ],
+  "platforms": [
+    "gd32h7"
+  ]
+}
+

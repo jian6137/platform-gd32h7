@@ -1,0 +1,22 @@
+{
+  "name": "GD32H759I_OSPI_Flash",
+  "version": "2.1.0",
+  "description": "GD25X512ME 64MB Octal SPI (OSPI) NOR Flash Driver for GD32H759I-EVAL.",
+  "keywords": [
+    "gd32h7",
+    "gd32h759i-eval",
+    "ospi",
+    "flash",
+    "gd25x512me"
+  ],
+  "license": "BSD-3-Clause",
+  "frameworks": [
+    "gd32h7xx_spl",
+    "spl",
+    "cmsis"
+  ],
+  "platforms": [
+    "gd32h7"
+  ]
+}
+

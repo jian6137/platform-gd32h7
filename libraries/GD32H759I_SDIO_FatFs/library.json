@@ -1,0 +1,22 @@
+{
+  "name": "GD32H759I_SDIO_FatFs",
+  "version": "2.1.0",
+  "description": "SDIO0 MicroSD Card Driver and FatFs R0.15 Filesystem Middleware for GD32H759I-EVAL.",
+  "keywords": [
+    "gd32h7",
+    "gd32h759i-eval",
+    "sdio",
+    "sdcard",
+    "fatfs"
+  ],
+  "license": "BSD-3-Clause",
+  "frameworks": [
+    "gd32h7xx_spl",
+    "spl",
+    "cmsis"
+  ],
+  "platforms": [
+    "gd32h7"
+  ]
+}
+

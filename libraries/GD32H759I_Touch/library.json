@@ -1,0 +1,25 @@
+{
+  "name": "GD32H759I_Touch",
+  "version": "2.1.0",
+  "description": "GT911 5-point Capacitive Touch Controller Driver over I2C for GD32H759I-EVAL.",
+  "keywords": [
+    "gd32h7",
+    "gd32h759i-eval",
+    "gt911",
+    "touch",
+    "i2c"
+  ],
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "GD32H759I_EVAL": "*"
+  },
+  "frameworks": [
+    "gd32h7xx_spl",
+    "spl",
+    "cmsis"
+  ],
+  "platforms": [
+    "gd32h7"
+  ]
+}
+

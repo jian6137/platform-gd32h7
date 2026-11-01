@@ -1,0 +1,15 @@
+# PlatformIO build artifacts
+.pio/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+.idea/
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.d
+

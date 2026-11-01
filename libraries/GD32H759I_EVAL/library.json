@@ -1,0 +1,25 @@
+{
+  "name": "GD32H759I_EVAL",
+  "version": "2.1.0",
+  "description": "Core Board Support Package for GigaDevice GD32H759I-EVAL (LEDs, Keys, COM0 USART, SysTick millisecond timer, and 32MB EXMC SDRAM).",
+  "keywords": [
+    "gd32h7",
+    "gd32h759i-eval",
+    "bsp",
+    "sdram",
+    "systick"
+  ],
+  "license": "BSD-3-Clause",
+  "frameworks": [
+    "gd32h7xx_spl",
+    "spl",
+    "cmsis"
+  ],
+  "platforms": [
+    "gd32h7"
+  ],
+  "build": {
+    "libArchive": false
+  }
+}
+

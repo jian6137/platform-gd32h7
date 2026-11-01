@@ -1,0 +1,28 @@
+{
+  "name": "GD32H759I_Audio",
+  "version": "2.1.0",
+  "description": "SPI1/I2S1 WAV & Synthetic Audio Streaming Driver for GD32H759I-EVAL.",
+  "keywords": [
+    "gd32h7",
+    "gd32h759i-eval",
+    "i2s",
+    "audio",
+    "wav"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "GD32H759I_SDIO_FatFs": "*"
+  },
+  "frameworks": [
+    "gd32h7xx_spl",
+    "spl",
+    "cmsis"
+  ],
+  "platforms": [
+    "gd32h7"
+  ],
+  "build": {
+    "libArchive": false
+  }
+}
+

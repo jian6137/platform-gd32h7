@@ -1,0 +1,26 @@
+{
+  "name": "GD32H759I_LCD",
+  "version": "2.1.0",
+  "description": "480x272 RGB565 TLI LCD Display Driver, Framebuffer Management, On-Screen Diagnostic Console (60x17), and OSD Renderer for GD32H759I-EVAL.",
+  "keywords": [
+    "gd32h7",
+    "gd32h759i-eval",
+    "lcd",
+    "tli",
+    "rgb565",
+    "console"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "GD32H759I_EVAL": "*"
+  },
+  "frameworks": [
+    "gd32h7xx_spl",
+    "spl",
+    "cmsis"
+  ],
+  "platforms": [
+    "gd32h7"
+  ]
+}
+
