@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zaide6137/platform-gd32h7.git"
+    "url": "https://github.com/jian6137/platform-gd32h7.git"
   },
   "version": "1.0.0",
   "frameworks": {
