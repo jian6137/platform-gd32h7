@@ -55,8 +55,27 @@
 
 ## 安装与快速上手 (`platformio.ini`)
 
-### 方式一：直接通过 GitHub 仓库地址引用（推荐）
-在你的 PlatformIO 工程 `platformio.ini` 中直接指定本仓库地址，PlatformIO 会自动完成平台拉取与配置：
+### 方式一：通过 PlatformIO 官方仓库（PlatformIO Registry）安装
+本平台已发布至 PlatformIO 官方注册中心：**[https://registry.platformio.org/platforms/jian6137/gd32h7](https://registry.platformio.org/platforms/jian6137/gd32h7)** *（注：截至 2026 年 11 月 1 日，该软件包正在等待 PlatformIO 官方审核；在审核通过前，可直接使用下方的“方式二”通过 GitHub 地址安装）*。
+
+全局安装（安装后即可在 **PIO Home -> New Project** 新建工程向导的下拉列表中直接选择 **GigaDevice GD32H759I-EVAL** 开发板）：
+```bash
+pio pkg install --global --platform jian6137/gd32h7
+```
+
+或者直接在工程的 `platformio.ini` 中引用：
+```ini
+[env:gd32h759i_eval]
+platform = jian6137/gd32h7
+board = gd32h759i_eval
+framework = gd32h7xx_spl
+monitor_speed = 115200
+build_flags =
+    -DPIO_GD32H7_PRINTF_USART0
+```
+
+### 方式二：直接通过 GitHub 仓库地址安装
+在你的 PlatformIO 工程 `platformio.ini` 中直接指定本仓库的 GitHub 地址，PlatformIO 会自动完成平台拉取与配置：
 
 ```ini
 [env:gd32h759i_eval]
@@ -68,8 +87,17 @@ build_flags =
     -DPIO_GD32H7_PRINTF_USART0
 ```
 
-### 方式二：本地克隆 / 软链接引用
-如果你已将 `platform-gd32h7` 克隆到本地目录：
+若希望将其全局安装至 **PIO Home -> New Project** 下拉列表中：
+```bash
+pio pkg install --global --platform https://github.com/jian6137/platform-gd32h7.git
+```
+
+### 方式三：本地克隆（Clone）/ 软链接引用
+将本仓库克隆到本地目录并通过 `symlink://` 引用：
+
+```bash
+git clone https://github.com/jian6137/platform-gd32h7.git
+```
 
 ```ini
 [env:gd32h759i_eval]

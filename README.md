@@ -55,8 +55,27 @@ Around the same time, our **BCA152** class introduced us to **PlatformIO** for E
 
 ## Installation & Quick Start (`platformio.ini`)
 
-### Option 1: Direct GitHub Repository URL (Recommended)
-Reference the repository URL directly in your project's `platformio.ini`—PlatformIO will download and configure the platform automatically:
+### Option 1: PlatformIO Registry
+Published on the PlatformIO Registry at **[https://registry.platformio.org/platforms/jian6137/gd32h7](https://registry.platformio.org/platforms/jian6137/gd32h7)** *(Note: As of November 1, 2026, the package is pending review on the PlatformIO Registry; you can use Option 2 below while review is in progress).*
+
+To install globally (so **GigaDevice GD32H759I-EVAL** is selectable in the **PIO Home -> New Project** dropdown):
+```bash
+pio pkg install --global --platform jian6137/gd32h7
+```
+
+Or reference it directly in your project's `platformio.ini`:
+```ini
+[env:gd32h759i_eval]
+platform = jian6137/gd32h7
+board = gd32h759i_eval
+framework = gd32h7xx_spl
+monitor_speed = 115200
+build_flags =
+    -DPIO_GD32H7_PRINTF_USART0
+```
+
+### Option 2: Direct GitHub Repository URL
+Reference the GitHub repository URL directly in your project's `platformio.ini`—PlatformIO will download and configure the platform automatically:
 
 ```ini
 [env:gd32h759i_eval]
@@ -68,8 +87,17 @@ build_flags =
     -DPIO_GD32H7_PRINTF_USART0
 ```
 
-### Option 2: Local Clone / Symlink
-If you have cloned `platform-gd32h7` locally on your machine:
+To install globally from GitHub for the **PIO Home -> New Project** wizard:
+```bash
+pio pkg install --global --platform https://github.com/jian6137/platform-gd32h7.git
+```
+
+### Option 3: Local Clone / Symlink
+Clone the repository locally and link it via `symlink://`:
+
+```bash
+git clone https://github.com/jian6137/platform-gd32h7.git
+```
 
 ```ini
 [env:gd32h759i_eval]
